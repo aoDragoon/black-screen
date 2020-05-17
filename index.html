@@ -5,18 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
 }
 
-	
+* {
+  box-sizing: border-box;
+}
+
+
 .bg-image {
   /* Full height */
   height: 100%; 
@@ -29,18 +40,65 @@ body, html {
 
 /* Images used */
 
-.img5 { background-image: url("http://s1.bwallpapers.com/wallpapers/2014/01/22/black-desktop-wallpaper_044727273.jpg"); height:130% }
-.img6 { background-image: url("https://swiftmomentum.com/wp-content/uploads/2013/03/futuristic-technology-background-loop-abstract-line-and-polygon-animation-4k-seamless-3840x2160-cropped-1920x1080.jpg"); }
+.img1 { background-image: url("http://s1.bwallpapers.com/wallpapers/2014/01/22/black-desktop-wallpaper_044727273.jpg"); height:130% }
+.img2 { background-image: url("https://swiftmomentum.com/wp-content/uploads/2013/03/futuristic-technology-background-loop-abstract-line-and-polygon-animation-4k-seamless-3840x2160-cropped-1920x1080.jpg"); }
+.img3 { background-image: url("https://www.wallpapers4u.org/wp-content/uploads/wavy_lines_background_smoke_veil_20050_1920x1080.jpg")}
 
 .container { margin:50px;color:white;position:relative; left:155px}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 8%;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
 
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
   color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
+  font-size: 50px;
+  font-family: Exo;
+  border: 8px solid #f1f1f1;
   position: relative;
   top: 50%;
   left: 50%;
@@ -49,10 +107,89 @@ body, html {
   width: 700px;
   padding: 20px;
   text-align: center;
+  
+}
+.bg-text:hover {
+  background-color:rgba(255, 255, 252, 0.7);
+  border:none;
+  color:black;
+}
+
+.game { 
+  color: white;
+  position:relative;
+  top:15%;
+  text-align: center;
+  
+}
+.gameh { 
+  font-size: 55px;
+  font-family: Audiowide;
+  font-weight: bold;   
+}
+.gamep { 
+  font-size: 20px;
+  font-family: Antic;
+  margin-left:20%;
+  margin-right:20%;
+}
+
+.butt{
+  border: none;
+  border-radius: 5px;
+  padding: 8px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size:30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: hsl(191, 93%, 68%);
+}
+
+.butt:hover{
+  background-color: hsl(191, 99%, 81%);
 }
 
 
 
+.column {
+  color: white;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  padding: 50px;
+  text-align:center;
+
+}
+
+
+.review {
+ margin-top: 20%;
+ content:"";
+ display: table;
+ clear: both;
+}
+
+
+.row {
+ margin-left:5%;
+ content:"";
+ display: table;
+ clear: both;
+}
+
+#div1 {
+  font-size:48px;
+}
+#div1:hover {
+ color: hsl(122, 100%, 65%);
+}
+.fab {
+ font-size:25px;
+}
+.fab:hover {
+ color:white;
+}
 
 </style>
 </head>
@@ -66,17 +203,38 @@ body, html {
 	<li><a href="#">Products</a></li>
 	<li><a href="#">Contact</a></li>
 	<li><a href="#">Service</a></li>
+        <li><button class="openbtn" onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
     </ul>
   </div>
 </nav>
 
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#a">About</a>
+  <a href="#b">Display</a>
+  <a href="#c">Buy</a>
+  <a href="#d">Reviews</a>
+  <a href="#e">Design</a>
+  <a href="#f">Battery Life</a>
+</div>
+
+<!-- JavaScript -->
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
 
 
-<div class="bg-image img5">
+<div  class="bg-image img1">
  <div class="container" >
  
 
-  <h1 style="color:silver">ROG Zephyrus G GA502DU</h1>
+  <h1 id="a" style="color:silver">ROG Zephyrus G GA502DU</h1>
   <p>POWER OF ULTRA SLIM GAMING</p><br><br>
      <div class="position">
        <div class="laptop1">
@@ -88,10 +246,118 @@ body, html {
      </div>
  </div>
 </div>
-<div class="bg-image img6">
+<div id="b" class="bg-image img2">
       <div class="bg-text">
-	AMAZING DISPLAY
+	AMAZING DISPLAY WITH <span style="color:red;font-size:60px">120HZ</span> REFRESH RATE
       </div>
+</div>
+ <div id="c" class="game">
+    <h2  class="gameh">EXPERIENCE ULTRA-SLIM GAMING</h2> <br><br>
+    <p class="gamep">A quad-core AMD&#174 Ryzen&#8482 7 3750H inside, paired with a GeForce&#174 GTX 1660Ti Max-Q and ROG BOOST up to 60W in Turbo mode to provide ample horsepower for better gaming experience.   
+     </p>
+     <img src="images\gtx_logo.png" width="740px" height="240px"> <br>
+      <p style="font-size:50px; font-family:Antic">&#8377 79,990</p>
+      <button class="butt">Buy</button>
+ </div>
+<div id="d" class="review">
+ <div class="column">
+   <img src="images\Ign-logo-white-1.png" width="300px" height="169px" > 
+   <p style="margin-left:15%; margin-right:20%;"><i>"ROG have built a gaming laptop that almost checks all boxes. It's light, slim, heavy on power, chunky with sound, fast..."</i></p>
+   <p><a href="#">Read More</a></p>
+ </div>
+ <div class="column">
+    <img src="images\stuff.jpeg" width="240px"  height="119px"> <br><br><br>  
+    <p style="margin-left:15%; margin-right:20%; text-align:center;"><i>"If there's a best budget gaming laptop you seek, you're looking at it"</i></p>
+    <p><a href="#">Read More</a></p>
+ </div>
+</div>
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images\Web_Detail1.jpg"  style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images\girl-video-game1.jpg"  style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images\nvidia_geforce_experience_main.jpg"  style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<img src="images\laptop5.jpg" style=" position:relative; left:28%; width:700px; height:700px"  >
+
+<div id="e" class="bg-image img3">
+ <div class="row">
+   <div class="column">
+     <img src="images\laptop2.png"  width="600px" height="600px">
+   </div>
+   <div class="column">
+     <h3  style= "margin-top:20%; font-size:60px; font-family:Electrolize; text-align:left"><span style="color:rgb(101, 234, 131)">S</span>LEEK DESIGN</h3>
+    </div>
+    <p style="text-align:left;color:hsl(0, 0%, 87%); font-size:20px;">Travel effortlessly between them with a compact body that's just 20mm thin and 2.19kg. Slim bezels fit the 39.62cm display into a 35.56cm chassis.</p>
+ </div>
+</div>
+<div style="text-align:center;">
+ <h3 id="f" style="font-size:60px; font-family:Electrolize;color: white"><span style="color:hsl(29, 100%, 72%)">LONGER</span> BATTERY LIFE</h3><br><br>
+ <p style="margin-left:10%;margin-right:10%; color:hsl(0, 0%, 87%); font-size:20px;">The ROG Zephyrus G strikes a perfect balance between power and portability. Its energy-efficient AMD&#174 Ryzen&#8482 APU provides enough power for serious gaming, while also supplying sufficient battery life for up to nearly 7 hours of 1080p video playback.Spend less time plugged in to a wall socket and more time on the move, surfing, streaming, and playing.</p>
+  
+ <div id="div1" class="fa"></div>
+
+<!-- JavaScript -->
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 4000);
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+</script>
+<br><br>
+<p style="font-family:Electrolize; font-size:30px; color:white">UP TO <span style="font-size:60px; color:red;">8.8Hrs</span> MOBILEMARK</p>
+
+</div>
+<br><br>
+<hr>
+<div style="text-align:center">
+ <p style="font-size:20px">Follow us on:</p><br>
+ <i class="fab fa-facebook-square"></i>
+ <i class="fab fa-twitter"></i>
+ <i class="fab fa-google-plus-g"></i>
 </div>
 
 
