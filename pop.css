@@ -13,20 +13,22 @@ body, html {
 .bg-image {
   /* Full height */
   height: 100%; 
-  
+
+ 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
 /* Images used */
 
 .img1 { background-image: url("http://s1.bwallpapers.com/wallpapers/2014/01/22/black-desktop-wallpaper_044727273.jpg"); height:130% }
 .img2 { background-image: url("https://swiftmomentum.com/wp-content/uploads/2013/03/futuristic-technology-background-loop-abstract-line-and-polygon-animation-4k-seamless-3840x2160-cropped-1920x1080.jpg"); }
 .img3 { background-image: url("https://www.wallpapers4u.org/wp-content/uploads/wavy_lines_background_smoke_veil_20050_1920x1080.jpg")}
-.img4 { background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7ee39b70-b1d4-4493-8026-e75ab1478069/d9kmhns-7d898e26-51d8-4516-94fa-f945811dd6fd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdlZTM5YjcwLWIxZDQtNDQ5My04MDI2LWU3NWFiMTQ3ODA2OVwvZDlrbWhucy03ZDg5OGUyNi01MWQ4LTQ1MTYtOTRmYS1mOTQ1ODExZGQ2ZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.l200oqze3Ilo2G3TsK-l_U8d2wynAunIr1gSRvKDMEU")}
-.img5 { background-image: url("https://a-static.besthdwallpaper.com/pain-yahiko-of-naruto-wallpaper-2048x1536-6602_26.jpg"); background-size:100% 100%}
+.img4 { background-image: url("https://images.hdqwalls.com/download/joker-lego-4k-wk-2160x3840.jpg")}
+
 
 .container { margin:50px;color:white;position:relative; left:155px}
 
@@ -172,7 +174,7 @@ body, html {
  .tab p {
    font-family:Audiowide; 
    font-size:35px; 
-   color: silver
+   color: rgb(150, 150, 150)
  }
  .tab {z-index: 2}
  .tab table {
@@ -184,25 +186,28 @@ body, html {
  }
  .tab table,td {
  text-align:left;
- border:1px solid black;
  padding: 8px;
  }
  .tab th {color:black; 
-  background-color:lavender;
-   border:1px black;
+  background-color:hsla(35, 100%, 48%, 0.6);
    padding: 8px;
  }
- .tab tr:nth-child(even) {
-  background-color:white;
+ .tab tr {
+  background-color:hsla(0, 0%, 0%, 0.5);
+  color:white;
  }
- .tab tr:nth-child(odd) {
-  background-color:white;
-  color:black;
+ .tab td {
+	 border: 1px solid black
  }
+.tab td:hover {
+ background-color:hsla(0, 0%, 0%, 0.6);
+}
+
 
 .fab {
  font-size:25px;
+ color:rgb(160, 160, 160);
 }
 .fab:hover {
- color:white;
+ color:rgb(80, 126, 255);
 }
